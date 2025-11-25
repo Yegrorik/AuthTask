@@ -168,7 +168,7 @@
 
 Для глобального доступа к API используется Cloudflare Tunnel. После запуска приложения публичная ссылка будет доступна в логах:
    ```bash
-   docker-compose build --no-cache
+   docker-compose logs cloudflared
    ```
 
 ---
