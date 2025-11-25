@@ -133,12 +133,32 @@
 
 ## 🚀 Запуск
 
-Клонируйте репозиторий:
-  ```bash
-  git clone https://github.com/Yegrorik/AuthTask.git
+1. Клонируйте репозиторий:
+    ```bash
+    git clone https://github.com/Yegrorik/AuthTask.git
 
-Переходм в папку с проектом
-  ```bash
-  cd AuthTask
+2. Переходим в директорию с проектом:
+   ```bash
+   cd AuthTask
 
+3. Создайте файл окружения:
+   ```bash
+   copy .env.sample .env
 
+4. Обновите следующие значения в `.env`:
+   ```text
+    DB_NAME: Name of your Data Base
+    DB_USER: user data base
+    DB_PASSWORD=Your PostgreSQL password
+    SECRET: Your secret key for encoding tokens
+
+5. Build с помощью Docker:
+   ```bash
+   docker-compose build --no-cache
+
+6. Запуск с помощью Docker Compose:
+   ```bash
+   docker-compose up
+
+7. Доступ к приложению:
+    - **Документация**: localhost:8000/docs
